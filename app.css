@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f4f5f7;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.container {
+    background: #fff;
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #d0d3d8;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.15s;
+}
+
+.todo-input:focus {
+    border-color: #4c8bf5;
+}
+
+.add-btn {
+    padding: 0.6rem 1rem;
+    background: #4c8bf5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.add-btn:hover {
+    background: #3a76d8;
+}
+
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.75rem;
+    background: #fafbfc;
+    border: 1px solid #eceef1;
+    border-radius: 6px;
+}
+
+.todo-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex: 1;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.todo-label input[type="checkbox"] {
+    width: 1.05rem;
+    height: 1.05rem;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #8a8f98;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #b0b4bb;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.4rem;
+    transition: color 0.15s;
+}
+
+.delete-btn:hover {
+    color: #e05a5a;
+}
+
+.empty-hint {
+    margin-top: 1rem;
+    text-align: center;
+    color: #9aa0a8;
+    font-size: 0.85rem;
+}
