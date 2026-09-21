@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "clean": "rimraf dist",
     "lint:html": "html-validate index.html",
     "build": "npm run clean && npm run lint:html && mkdir -p dist && cp index.html app.css app.js dist/",
